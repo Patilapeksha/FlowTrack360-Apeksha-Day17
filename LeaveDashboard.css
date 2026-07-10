@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  overflow-x: hidden;
+}
+
+.leave-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 12px;
+}
+
+.leave-container h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+
+.summary-section,
+.leave-balance {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.summary-card,
+.balance-card {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card h3,
+.balance-card h3 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.summary-card p,
+.balance-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.apply-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions select {
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+
+.holiday-section {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.holiday-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.holiday-section ul {
+  padding-left: 18px;
+}
+
+.holiday-section li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+
+
+.table-section {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow-x: hidden;
+}
+
+.table-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 5px;
+  font-size: 12px;
+  text-align: center;
+  word-wrap: break-word;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+}
+
+
+.Approved {
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.Pending {
+  color: orange;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.Rejected {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+
+@media (max-width: 992px) {
+  .summary-section,
+  .leave-balance {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  th,
+  td {
+    font-size: 11px;
+    padding: 7px 4px;
+  }
+}
+
+.link-test{
+    text-align: center;
+    margin-top: 15px;
+
+  }
+
+.link-test span{
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+  }

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f4f6fb;
+}
+
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  height: 100vh;
+  background: #1f2937;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 12px;
+  margin-bottom: 6px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.sidebar button:hover {
+  background: #374151;
+}
+
+.main-content {
+  flex: 1;
+  height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card,
+.task-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.setting-btn {
+  width: 200px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.section {
+    margin-top: 30px;
+
+}
+.section h2{
+    margin-bottom: 20px;
+}
